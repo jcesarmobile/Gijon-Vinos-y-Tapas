@@ -1,0 +1,35 @@
+#bares li a img {
+	width:100%;
+	vertical-align:middle;
+}
+
+.imgspan {
+	width:20%;
+	display:inline-block;
+}
+
+.titlespan {
+	margin-left: 10px;
+}
+
+#foto {
+	margin: 20px auto;
+	width: 75%;
+	display:block;
+}
+
+#dir_box {
+	margin: 3% 1% 1% 1%;
+}
+#mapa {
+	margin-top:30px;
+	height: 95%;
+}
+
+#map_canvas {
+	height:90%;
+}
+
+.gm-style-iw {
+	color: black;
+}

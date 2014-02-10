@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--HTML5 doctype-->
+<html>
+ 
+    <head>
+        <title>UI Starter</title>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <link rel="stylesheet" type="text/css" href="css/icons.css" />
+        <link rel="stylesheet" type="text/css" href="css/af.ui.css" />
+        <link rel="stylesheet" type="text/css" href="css/app.css" />
+        <!-- uncomment for apps
+        <script type="text/javascript" charset="utf-8" src="indelxdk.js"></script>       
+        -->
+        <script type="text/javascript" src="http://maps.google.com/maps/api/js?v=3&sensor=false&language=es"> </script>
+        
+        <script type="text/javascript" charset="utf-8" src="./cordova.js"></script>
+        <script type="text/javascript" charset="utf-8" src="./appframework.js"></script>
+        <script type="text/javascript" charset="utf-8" src="ui/appframework.ui.min.js"></script>
+        <script type="text/javascript" charset="utf-8" src="js/logica.js"></script>
+    </head>
+ 
+    <body>
+        <div id="afui"> <!-- this is the main container div.  This way, you can have only part of your app use UI -->
+            <!-- this is the header div at the top -->
+            
+            <div id="content">
+                <!-- here is where you can add your panels -->
+                <div title='Tapas Gijón' id="main" class="panel" selected="true">
+                	<ul id="bares" class="list">
+					   
+					</ul>
+                </div>
+                <div title='Detalles' id="details" data-load='loadedBarPanel' class="panel">
+                	<img id="foto" src=""/>
+                	<div id="botones" class="button-grouped flex">
+						
+					</div>
+                	
+					<div>
+						Horario: <span id="horario"></span>
+					</div>
+                	<p id="descripcion"></p>
+                	
+                	<a id="web" href='' target="_blank" class="button">Visitar Web</a>
+                	
+                </div>
+                <div title="Localización" id="localizacion" data-load='loadedLocPanel' class="panel">
+                	<div id="dir_box">
+                		Direccion: <span id="direccion"></span>
+                	</div>
+                	<div id="mapa">
+                		<div id="map_canvas"></div>
+                	</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
